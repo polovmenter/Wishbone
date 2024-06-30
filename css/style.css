@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-light: #FFFFFF;
+  --color-light-alt: #ECE7E4;
+  --color-dark: #1B1A1A;
+  --color-dark-alt: #403E3B;
+  --color-brown: #645C55;
+  --font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=style.css.map */
