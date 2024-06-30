@@ -1,0 +1,16 @@
+.header {
+    background-color: $light;
+    box-shadow: 11px 11px 25px 0px rgba(9, 7, 37, 0.06);
+    padding-block: 22px;
+
+    & .menu {
+        margin-left: auto;
+    }
+
+    &__inner {
+        display: flex;
+        column-gap: 25px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,20 @@
+.container {
+    max-width: calc($container-width + $container-padding-x * 2);
+    padding-inline: $container-padding-x;
+    margin-inline: auto;
+}
+
+.button {
+    letter-spacing: 0.4px;
+    color: $light;
+    padding: 11px 20px;
+    background-color: $dark;
+    border-radius: 14px;
+    border: 1px solid transparent;
+
+    @include hover {
+        color: $dark;
+        background-color: transparent;
+        border-color: currentColor;
+    }
+}

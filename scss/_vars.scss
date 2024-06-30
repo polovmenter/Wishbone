@@ -5,5 +5,23 @@
     --color-dark-alt: #403E3B;
     --color-brown: #645C55;
 
-    --font-family: "Poppins", sans-serif;
+    --font-family-base: "Poppins", sans-serif;
+
+    --container-width: 1160px;
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.3s;
 }
+
+$light: var(--color-light);
+$light-alt: var(--color-light-alt);
+$dark: var(--color-dark);
+$dark-alt: var(--color-dark-alt);
+$brown: var(--color-brown);
+
+$font-family-base: var(--font-family-base);
+
+$container-width: var(--container-width);
+$container-padding-x: var(--container-padding-x);
+
+$transition-duration: var(--transition-duration);

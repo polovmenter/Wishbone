@@ -9,5 +9,15 @@ ul {
 }
 
 a {
-    text-decoration: none;    
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
 }
