@@ -1,0 +1,28 @@
+.image-section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        right: 75px;
+        transform: translateY(-50%);
+        max-width: 285px;
+    }
+
+    &--content-left .image-section__content{
+        right: 0;
+        left: 75px;
+    }
+
+    &__title {
+        color: $dark-alt;
+    }
+
+    &__text {
+        color: $brown;
+    }
+}

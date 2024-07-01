@@ -5,6 +5,10 @@
 
     & .menu {
         margin-left: auto;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__inner {
@@ -12,5 +16,15 @@
         column-gap: 25px;
         align-items: center;
         justify-content: space-between;
+    }
+
+    &__button {
+        @include tablet {
+            margin-left: auto;
+        }
+
+        @include mobile-s {
+            display: none;
+        }
     }
 }

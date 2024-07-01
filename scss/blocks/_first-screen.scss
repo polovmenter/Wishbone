@@ -1,0 +1,35 @@
+.first-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-alt;
+
+    &__content {
+        flex-basis: 50%;
+
+        &-inner {
+            max-width: 510px;
+            margin-inline: auto;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 64px;
+        line-height: 1.1;
+        margin-bottom: 18px;
+        color: $dark;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__image {
+        width: 50%;
+        height: auto;
+    }
+}

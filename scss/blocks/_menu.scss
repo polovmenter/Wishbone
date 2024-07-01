@@ -25,8 +25,10 @@
             transition: transform 0.3s;
         }
 
-        &:hover::after {
-            transform: scaleX(1)
+        @include hover {
+            &::after {
+                transform: scaleX(1);
+            }
         }
     }
 }
