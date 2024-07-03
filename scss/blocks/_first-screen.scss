@@ -32,7 +32,7 @@
     }
 
     &__subtitle {
-        @include fluid-text(40, 64);
+        @include fluid-text(35, 64);
 
         line-height: 1.1;
         margin-bottom: 18px;
@@ -59,12 +59,11 @@
 
         @include mobile {
             width: 100%;
-            max-width: 510px;
-            height: 400px;
+            height: 300px;
         }
 
         @include mobile-s {
-            height: auto;
+            height: 200px;
         }
     }
 }

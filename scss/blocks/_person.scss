@@ -1,0 +1,36 @@
+.person {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 30px;
+
+    @include mobile {
+        column-gap: 20px;
+    }
+
+    &__image {
+        border-radius: 50%;
+
+        @include desktop {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    &__info {
+        text-align: left;
+    }
+
+    &__name {
+        @include fluid-text(14, 17);
+        
+        color: $dark;
+    }
+
+    &__post {
+        @include fluid-text(12, 14);
+
+        line-height: 1;
+        color: $brown;
+        margin-top: -3px;
+    }
+}

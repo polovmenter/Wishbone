@@ -5,17 +5,48 @@
     background-size: cover;
     min-height: 600px;
 
+    @include desktop {
+        min-height: 400px;
+    }
+
+    @include tablet {
+        min-height: 300px;
+    }
+
+    @include mobile {
+        min-height: 200px;
+    }
+
     &__content {
         position: absolute;
         top: 50%;
         right: 75px;
         transform: translateY(-50%);
         max-width: 285px;
+
+        @include desktop {
+            max-width: 180px;
+        }
+
+        @include mobile {
+            right: 15px;
+        }
+
+        @include mobile-s {
+            top: 15px;
+            transform: translateY(0);
+            text-align: right;
+        }
     }
 
     &--content-left .image-section__content{
         right: 0;
         left: 75px;
+
+        @include mobile {
+            left: 15px;
+            text-align: left;
+        }
     }
 
     &__title {
