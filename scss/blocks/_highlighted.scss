@@ -1,5 +1,6 @@
 .highlighted {
-    font-size: 14px;
+    @include fluid-text(12, 14);
+    
     line-height: 1.4;
     letter-spacing: 2px;
     text-transform: uppercase;

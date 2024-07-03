@@ -3,6 +3,12 @@
     box-shadow: 11px 11px 25px 0px rgba(9, 7, 37, 0.06);
     padding-block: 22px;
 
+    & .logo__image {
+        @include mobile-s {
+            width: 200px;
+        }
+    }
+
     & .menu {
         margin-left: auto;
 

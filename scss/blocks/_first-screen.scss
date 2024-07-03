@@ -4,32 +4,67 @@
     align-items: center;
     background-color: $light-alt;
 
+    @include mobile {
+        flex-direction: column;
+    }
+
     &__content {
         flex-basis: 50%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+
+        @include mobile {
+            padding: 40px 15px;
+        }
 
         &-inner {
             max-width: 510px;
-            margin-inline: auto;
         }
     }
 
     &__title {
         margin-bottom: 20px;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
 
     &__subtitle {
-        font-size: 64px;
+        @include fluid-text(40, 64);
+
         line-height: 1.1;
         margin-bottom: 18px;
         color: $dark;
+
+        @include tablet {
+            margin-bottom: 10px;
+            line-height: 1;
+        }
     }
 
     &__text {
         margin-bottom: 30px;
+
+        @include tablet {
+            margin-bottom: 20px;
+        }
     }
 
     &__image {
         width: 50%;
         height: auto;
+        object-fit: cover;
+
+        @include mobile {
+            width: 100%;
+            max-width: 510px;
+            height: 400px;
+        }
+
+        @include mobile-s {
+            height: auto;
+        }
     }
 }
