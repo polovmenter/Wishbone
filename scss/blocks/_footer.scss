@@ -1,0 +1,40 @@
+.footer {
+    padding-block: 60px;
+
+    @include tablet {
+        padding-block: 40px;
+    }
+
+    @include mobile {
+        padding-block: 30px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        @include mobile-s {
+            flex-direction: column;
+            row-gap: 10px;
+            align-items: start;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+
+        @include tablet {
+            margin-bottom: 10px;
+
+            & img {
+                width: 220px;
+                height: 20px;
+            }
+        }
+
+        @include mobile {
+            margin-bottom: 5px;
+        }
+    }
+}
