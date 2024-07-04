@@ -1,0 +1,58 @@
+.process {
+    padding-block: $section-padding;
+    text-align: center;
+
+    @include tablet {
+        padding-block: 40px;
+    }
+    
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        row-gap: 13px;
+        margin-bottom: 47px;
+
+        @include tablet {
+            row-gap: 5px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        max-width: 290px;
+
+        @include mobile {
+            max-width: 250px;
+        }
+
+        &-icon {
+            margin-inline: auto;
+            margin-bottom: 15px;
+
+            @include mobile {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-title {
+            @include fluid-text(14, 18);
+            margin-bottom: 10px;
+
+            @include mobile {
+                margin-bottom: 5px;
+            }
+        }
+
+        &-text {
+            @include fluid-text(12, 15);
+            color: $brown;
+        }
+    }
+}

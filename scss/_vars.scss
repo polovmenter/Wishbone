@@ -11,6 +11,8 @@
     --container-padding-x: 15px;
 
     --transition-duration: 0.3s;
+
+    --section-padding: 100px;
 }
 
 $light: var(--color-light);
@@ -25,3 +27,5 @@ $container-width: var(--container-width);
 $container-padding-x: var(--container-padding-x);
 
 $transition-duration: var(--transition-duration);
+
+$section-padding: var(--section-padding);
