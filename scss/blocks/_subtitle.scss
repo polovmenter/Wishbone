@@ -1,4 +1,9 @@
 .subtitle {
     @include fluid-text(25, 39);
     line-height: 1.1;
+
+    &--small {
+        @include fluid-text(25, 32);
+        line-height: 1.2;
+    }
 }

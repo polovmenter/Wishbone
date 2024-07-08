@@ -39,6 +39,10 @@
             @include mobile {
                 margin-bottom: 10px;
             }
+            
+            @include mobile-s {
+                width: 100px;
+            }
         }
 
         &-title {

@@ -1,0 +1,68 @@
+.clients {
+    padding-block: 100px;
+    background-color: $dark-alt;
+    color: $light-alt;
+
+    @include tablet {
+        padding-block: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+
+        @include mobile {
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: 20px;
+        }
+    }
+
+    &__content {
+        max-width: 450px;
+    }
+
+    &__title {
+        color: $light-alt;
+    }
+
+    &__subtitle {
+        color: $light;
+        margin-top: -4px;
+        margin-bottom: 14px;  
+    }
+
+    &__text {
+        @include fluid-text(12, 15);
+        line-height: 1.6;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 96px;
+        padding-right: 180px;
+
+        @include tablet {
+            padding-right: 0;
+            gap: 70px;
+        }
+
+        @include mobile-s {
+            gap: 60px;
+        }
+    }
+
+    &__item {
+        align-self: center;
+
+        &-logo {
+            @include mobile-s {
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+}
