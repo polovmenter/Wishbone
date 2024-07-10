@@ -37,4 +37,9 @@
             margin-bottom: 5px;
         }
     }
+
+    &__text {
+        @include fluid-text(12, 14);
+        line-height: 1.4;
+    }
 }

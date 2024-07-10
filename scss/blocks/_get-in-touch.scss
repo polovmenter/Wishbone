@@ -1,0 +1,44 @@
+.get-in-touch {
+    padding-block: 100px;
+    background-color: #CEC4BC;
+
+    @include tablet {
+        padding-block: 60px;
+    }
+
+    @include mobile-s {
+        padding-block: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__heading {
+        max-width: 570px;
+
+        @include tablet {
+            max-width: 400px;
+        }
+
+        @include mobile {
+            max-width: 370px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: -5px;
+        
+        @include mobile-s {
+            margin-top: 0;
+        }
+    }
+
+    &__button {
+        flex-shrink: 0;
+    }
+}
