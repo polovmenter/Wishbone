@@ -49,6 +49,12 @@ h1, h2, h3, h4, h5, h6 {
   --container-padding-x: 15px;
   --transition-duration: 0.3s;
   --section-padding: 100px;
+  --header-height: 86px;
+}
+@media (max-width: 520px) {
+  :root {
+    --header-height: 60px;
+  }
 }
 
 .container {
@@ -142,6 +148,64 @@ button {
 @media (hover: none) {
   .menu__link:active::after {
     transform: scaleX(1);
+  }
+}
+
+.mobile-menu--open .mobile-menu__overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.mobile-menu--open .mobile-menu__body {
+  transform: translateX(0);
+}
+.mobile-menu__overlay {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: var(--transition-duration);
+}
+.mobile-menu__body {
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  padding: 15px;
+  z-index: 2;
+  background-color: var(--color-light);
+  transform: translateX(100%);
+  transition-duration: var(--transition-duration);
+}
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+@media (max-width: 520px) {
+  .mobile-menu__list {
+    margin-bottom: 5px;
+  }
+}
+.mobile-menu__link {
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+  color: var(--color-dark);
+}
+.mobile-menu__button {
+  display: none;
+}
+@media (max-width: 520px) {
+  .mobile-menu__button {
+    display: block;
   }
 }
 
@@ -256,9 +320,16 @@ button {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   background-color: var(--color-light);
   box-shadow: 11px 11px 25px 0px rgba(9, 7, 37, 0.06);
-  padding-block: 22px;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 520px) {
   .header .logo__image {
@@ -279,6 +350,7 @@ button {
        column-gap: 25px;
   align-items: center;
   justify-content: space-between;
+  flex-basis: 100%;
 }
 @media (max-width: 1023px) {
   .header__button {
@@ -296,6 +368,7 @@ button {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-light-alt);
+  margin-top: var(--header-height);
 }
 @media (max-width: 768px) {
   .first-screen {
@@ -388,7 +461,6 @@ button {
 }
 .about__content {
   max-width: 490px;
-  padding-bottom: 28px;
 }
 .about__text-wrapper {
   display: flex;

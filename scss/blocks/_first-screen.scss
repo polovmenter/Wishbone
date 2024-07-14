@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: $light-alt;
+    margin-top: $header-height;
 
     @include mobile {
         flex-direction: column;

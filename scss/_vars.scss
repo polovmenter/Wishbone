@@ -13,6 +13,12 @@
     --transition-duration: 0.3s;
 
     --section-padding: 100px;
+
+    --header-height: 86px;
+
+    @media (max-width: 520px) {
+        --header-height: 60px;    
+    }
 }
 
 $light: var(--color-light);
@@ -29,3 +35,5 @@ $container-padding-x: var(--container-padding-x);
 $transition-duration: var(--transition-duration);
 
 $section-padding: var(--section-padding);
+
+$header-height: var(--header-height);

@@ -1,7 +1,14 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     background-color: $light;
     box-shadow: 11px 11px 25px 0px rgba(9, 7, 37, 0.06);
-    padding-block: 22px;
+    height: $header-height;
+    display: flex;
+    align-items: center;
 
     & .logo__image {
         @include mobile-s {
@@ -22,6 +29,7 @@
         column-gap: 25px;
         align-items: center;
         justify-content: space-between;
+        flex-basis: 100%;
     }
 
     &__button {
