@@ -1,5 +1,5 @@
 .featured {
-    padding-block: 100px;
+    padding-block: $section-padding;
     background-color: #F7F7F7;
 
     @include tablet {
