@@ -1,0 +1,27 @@
+.button {
+    display: inline-block;
+    letter-spacing: 0.4px;
+    color: $light;
+    padding: 11px 20px;
+    background-color: $dark;
+    border-radius: 14px;
+    border: 1px solid transparent;
+
+    @include hover {
+        color: $dark;
+        background-color: transparent;
+        border-color: currentColor;
+    }
+
+    &--transparent {
+        color: $dark;
+        background-color: transparent;
+        border-color: currentColor;
+
+        @include hover {
+            color: $light;
+            background-color: $dark;
+            border-color: transparent;
+        }
+    }
+}
